@@ -1,11 +1,16 @@
 import { Link } from 'react-router-dom';
 
 function Time(props) {
+
+    const chosenTime = (clickedTime) => {
+        const chosenTimeObject = props.chosenMovie.filter(movie => movie.time === clickedTime)
+        return chosenTimeObject
+    }
     return (
         <div>
             <h1>Time</h1>
-            {/* <p>{props.chosenMovie}</p> */}
-            {props.chosenMovie.map(m => <p onClick={() => props.setChosenTime(m.time)}><Link to={`/seats/${m.time}`}>{m.time}</Link></p>)}
+            
+            {props.chosenMovie.map(m => <Link className='linkStyle' to={`/seats/${m.time}`}><div className='timeFlex'><p className='timeLinks' onClick={() => props.setChosenTime(chosenTime(m.time))}>{m.time}</p></div></Link>)}
   
         </div>
     )
