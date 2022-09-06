@@ -1,0 +1,323 @@
+[
+    {
+        "movie": "Titanic",
+        "time": "17",
+        "seats": [
+            {"id": 0, "availability": false},
+            {"id": 1, "availability": false},
+            {"id": 2, "availability": true},
+            {"id": 3, "availability": true},
+            {"id": 4, "availability": true},
+            {"id": 5, "availability": true},
+            {"id": 6, "availability": true},
+            {"id": 7, "availability": true},
+            {"id": 8, "availability": true},
+            {"id": 9, "availability": true}
+        ]
+    },
+    {
+        "movie": "Titanic",
+        "time": "18",
+        "seats": [
+            {"id": 0, "availability": true},
+            {"id": 1, "availability": true},
+            {"id": 2, "availability": true},
+            {"id": 3, "availability": true},
+            {"id": 4, "availability": true},
+            {"id": 5, "availability": true},
+            {"id": 6, "availability": false},
+            {"id": 7, "availability": true},
+            {"id": 8, "availability": false},
+            {"id": 9, "availability": true}
+        ]
+    },
+    {
+        "movie": "Titanic",
+        "time": "19",
+        "seats": [
+            {"id": 0, "availability": true},
+            {"id": 1, "availability": true},
+            {"id": 2, "availability": true},
+            {"id": 3, "availability": false},
+            {"id": 4, "availability": true},
+            {"id": 5, "availability": true},
+            {"id": 6, "availability": true},
+            {"id": 7, "availability": true},
+            {"id": 8, "availability": false},
+            {"id": 9, "availability": true}
+        ]
+    },
+    {
+        "movie": "Titanic",
+        "time": "20",
+        "seats": [
+            {"id": 0, "availability": false},
+            {"id": 1, "availability": true},
+            {"id": 2, "availability": true},
+            {"id": 3, "availability": true},
+            {"id": 4, "availability": true},
+            {"id": 5, "availability": true},
+            {"id": 6, "availability": true},
+            {"id": 7, "availability": true},
+            {"id": 8, "availability": false},
+            {"id": 9, "availability": true}
+        ]
+    },
+    {
+        "movie": "A beautiful mind",
+        "time": "17",
+        "seats": [
+            {"id": 0, "availability": true},
+            {"id": 1, "availability": true},
+            {"id": 2, "availability": true},
+            {"id": 3, "availability": true},
+            {"id": 4, "availability": false},
+            {"id": 5, "availability": true},
+            {"id": 6, "availability": true},
+            {"id": 7, "availability": true},
+            {"id": 8, "availability": false},
+            {"id": 9, "availability": true}
+        ]
+    },
+    {
+        "movie": "A beautiful mind",
+        "time": "18",
+        "seats": [
+            {"id": 0, "availability": false},
+            {"id": 1, "availability": true},
+            {"id": 2, "availability": true},
+            {"id": 3, "availability": true},
+            {"id": 4, "availability": true},
+            {"id": 5, "availability": false},
+            {"id": 6, "availability": true},
+            {"id": 7, "availability": true},
+            {"id": 8, "availability": false},
+            {"id": 9, "availability": true}
+        ]
+    },
+    {
+        "movie": "A beautiful mind",
+        "time": "19",
+        "seats": [
+            {"id": 0, "availability": true},
+            {"id": 1, "availability": true},
+            {"id": 2, "availability": false},
+            {"id": 3, "availability": true},
+            {"id": 4, "availability": true},
+            {"id": 5, "availability": true},
+            {"id": 6, "availability": false},
+            {"id": 7, "availability": true},
+            {"id": 8, "availability": true},
+            {"id": 9, "availability": true}
+        ]
+    },
+    {
+        "movie": "A beautiful mind",
+        "time": "20",
+        "seats": [
+            {"id": 0, "availability": false},
+            {"id": 1, "availability": true},
+            {"id": 2, "availability": true},
+            {"id": 3, "availability": true},
+            {"id": 4, "availability": true},
+            {"id": 5, "availability": true},
+            {"id": 6, "availability": true},
+            {"id": 7, "availability": true},
+            {"id": 8, "availability": true},
+            {"id": 9, "availability": false}
+        ]
+    },
+    {
+        "movie": "Brokeback mountain",
+        "time": "17",
+        "seats": [
+            {"id": 0, "availability": true},
+            {"id": 1, "availability": true},
+            {"id": 2, "availability": true},
+            {"id": 3, "availability": true},
+            {"id": 4, "availability": false},
+            {"id": 5, "availability": true},
+            {"id": 6, "availability": true},
+            {"id": 7, "availability": false},
+            {"id": 8, "availability": true},
+            {"id": 9, "availability": true}
+        ]
+    },
+    {
+        "movie": "Brokeback mountain",
+        "time": "18",
+        "seats": [
+            {"id": 0, "availability": true},
+            {"id": 1, "availability": true},
+            {"id": 2, "availability": true},
+            {"id": 3, "availability": false},
+            {"id": 4, "availability": true},
+            {"id": 5, "availability": true},
+            {"id": 6, "availability": false},
+            {"id": 7, "availability": true},
+            {"id": 8, "availability": true},
+            {"id": 9, "availability": true}
+        ]
+    },
+    {
+        "movie": "Brokeback mountain",
+        "time": "19",
+        "seats": [
+            {"id": 0, "availability": false},
+            {"id": 1, "availability": true},
+            {"id": 2, "availability": true},
+            {"id": 3, "availability": true},
+            {"id": 4, "availability": true},
+            {"id": 5, "availability": true},
+            {"id": 6, "availability": true},
+            {"id": 7, "availability": true},
+            {"id": 8, "availability": true},
+            {"id": 9, "availability": false}
+        ]
+    },
+    {
+        "movie": "Brokeback mountain",
+        "time": "20",
+        "seats": [
+            {"id": 0, "availability": true},
+            {"id": 1, "availability": false},
+            {"id": 2, "availability": true},
+            {"id": 3, "availability": true},
+            {"id": 4, "availability": true},
+            {"id": 5, "availability": true},
+            {"id": 6, "availability": true},
+            {"id": 7, "availability": false},
+            {"id": 8, "availability": true},
+            {"id": 9, "availability": true}
+        ]
+    },
+    {
+        "movie": "Utvandrarna",
+        "time": "17",
+        "seats": [
+            {"id": 0, "availability": false},
+            {"id": 1, "availability": false},
+            {"id": 2, "availability": true},
+            {"id": 3, "availability": true},
+            {"id": 4, "availability": true},
+            {"id": 5, "availability": true},
+            {"id": 6, "availability": true},
+            {"id": 7, "availability": true},
+            {"id": 8, "availability": true},
+            {"id": 9, "availability": true}
+        ]
+    },
+    {
+        "movie": "Utvandrarna",
+        "time": "18",
+        "seats": [
+            {"id": 0, "availability": true},
+            {"id": 1, "availability": true},
+            {"id": 2, "availability": false},
+            {"id": 3, "availability": false},
+            {"id": 4, "availability": false},
+            {"id": 5, "availability": true},
+            {"id": 6, "availability": true},
+            {"id": 7, "availability": true},
+            {"id": 8, "availability": true},
+            {"id": 9, "availability": true}
+        ]
+    },
+    {
+        "movie": "Utvandrarna",
+        "time": "19",
+        "seats": [
+            {"id": 0, "availability": false},
+            {"id": 1, "availability": true},
+            {"id": 2, "availability": true},
+            {"id": 3, "availability": true},
+            {"id": 4, "availability": true},
+            {"id": 5, "availability": true},
+            {"id": 6, "availability": true},
+            {"id": 7, "availability": true},
+            {"id": 8, "availability": true},
+            {"id": 9, "availability": true}
+        ]
+    },
+    {
+        "movie": "Utvandrarna",
+        "time": "20",
+        "seats": [
+            {"id": 0, "availability": true},
+            {"id": 1, "availability": true},
+            {"id": 2, "availability": true},
+            {"id": 3, "availability": true},
+            {"id": 4, "availability": true},
+            {"id": 5, "availability": false},
+            {"id": 6, "availability": true},
+            {"id": 7, "availability": true},
+            {"id": 8, "availability": true},
+            {"id": 9, "availability": true}
+        ]
+    },
+    {
+        "movie": "Star Wars",
+        "time": "17",
+        "seats": [
+            {"id": 0, "availability": true},
+            {"id": 1, "availability": true},
+            {"id": 2, "availability": true},
+            {"id": 3, "availability": true},
+            {"id": 4, "availability": true},
+            {"id": 5, "availability": true},
+            {"id": 6, "availability": false},
+            {"id": 7, "availability": true},
+            {"id": 8, "availability": true},
+            {"id": 9, "availability": true}
+        ]
+    },
+    {
+        "movie": "Star Wars",
+        "time": "18",
+        "seats": [
+            {"id": 0, "availability": true},
+            {"id": 1, "availability": true},
+            {"id": 2, "availability": false},
+            {"id": 3, "availability": true},
+            {"id": 4, "availability": true},
+            {"id": 5, "availability": true},
+            {"id": 6, "availability": true},
+            {"id": 7, "availability": true},
+            {"id": 8, "availability": true},
+            {"id": 9, "availability": true}
+        ]
+    },
+    {
+        "movie": "Star Wars",
+        "time": "19",
+        "seats": [
+            {"id": 0, "availability": false},
+            {"id": 1, "availability": true},
+            {"id": 2, "availability": true},
+            {"id": 3, "availability": true},
+            {"id": 4, "availability": true},
+            {"id": 5, "availability": true},
+            {"id": 6, "availability": true},
+            {"id": 7, "availability": true},
+            {"id": 8, "availability": true},
+            {"id": 9, "availability": true}
+        ]
+    },
+    {
+        "movie": "Star Wars",
+        "time": "20",
+        "seats": [
+            {"id": 0, "availability": false},
+            {"id": 1, "availability": true},
+            {"id": 2, "availability": true},
+            {"id": 3, "availability": true},
+            {"id": 4, "availability": true},
+            {"id": 5, "availability": true},
+            {"id": 6, "availability": true},
+            {"id": 7, "availability": true},
+            {"id": 8, "availability": true},
+            {"id": 9, "availability": true}
+        ]
+    }
+    
+]
