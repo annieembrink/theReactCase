@@ -37,8 +37,8 @@ console.log('chosenSeat', chosenSeats, 'chosenTime', chosenTime.map(seats => sea
         <Route path ="/time" element={ <Time chosenMovie={chosenMovie}/> }/>
         <Route path ="/time/:title" element={ <Time chosenMovie={chosenMovie} setChosenTime={setChosenTime}/> }/>
         <Route path ="/seats" element={ <Seats/> }/>
-        <Route path ="/seats/:time" element={ <Seats chosenTime={chosenTime} setChosenSeats={setChosenSeats}/> }/>
-        <Route path ="/confirmation/:bye" element={ <Confirmation/> }/>
+        <Route path ="/seats/:time" element={ <Seats chosenTime={chosenTime} chosenSeats={chosenSeats} setChosenSeats={setChosenSeats}/> }/>
+        <Route path ="/confirmation/:bye" element={ <Confirmation chosenMovie={chosenMovie} chosenTime={chosenTime} chosenSeats={chosenSeats}/> }/>
       </Routes>
     </div>
   );

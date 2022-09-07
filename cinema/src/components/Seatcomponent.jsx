@@ -6,13 +6,22 @@ const Seatcomponent = (props) => {
             console.log('hej')
         }
     
-        function clickedSeat(theSeat) {
-            console.log(theSeat)
-            console.log(theSeat.clicked)
-            if (theSeat === true) {
-                theSeat.className = 'taken'
-            } 
-        }
+        // function clickedSeat(theSeat) {
+        //     console.log(theSeat)
+        //     console.log(theSeat.clicked)
+        //     if (theSeat === true) {
+        //         theSeat.className = 'taken'
+        //     } 
+        // }
+
+        let seat = props.props.chosenTime.map(theMovie => theMovie.seats.map(seat => seat.id));
+
+        let oneSeat = seat.map(oneSeat => oneSeat)
+
+        // console.log('seat', seat, 'oneSeat', oneSeat)
+
+        // let isMarked = props.props.chosenSeats.filter(id => id === oneSeat.map(seat => seat))
+        // console.log('isMarked', isMarked)
     
 return (
     
@@ -25,7 +34,9 @@ return (
                 <div className='seatContainer'>
                     {theMovie.seats.map((seat) => (
                         
-                        <div className={'oneSeat ' + (seat.availability ? 'free' : 'taken')} onClick={() => seat.availability ? clickedSeat(seat) : clickedSeat(seat)}>{seat.id + 1}</div>
+                        <div className={'oneSeat ' + (seat.availability ? 'free' : 'taken')} onClick={() => seat.availability ? props.props.setChosenSeats([...props.props.chosenSeats, seat.id]) : props.props.setChosenSeats([...props.props.chosenSeats, seat.id])}>{seat.id + 1}</div>
+
+                        // <div className={'oneSeat ' + (seat.availability ? 'free' : 'taken')} onClick={() => seat.availability ? clickedSeat(seat) : clickedSeat(seat)}>{seat.id + 1}</div>
                     ))}
                     </div>
 
