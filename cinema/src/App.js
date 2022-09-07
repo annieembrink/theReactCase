@@ -5,10 +5,10 @@ import Movies from './pages/Movies';
 import Seats from './pages/Seats';
 import Confirmation from './pages/Confirmation';
 import Time from './pages/Time';
-import Moviecomponent from './components/Moviecomponent';
-import Timecomponent from './components/Timecomponent';
-import Seatcomponent from './components/Seatcomponent';
-import Confirmationcomponent from './components/Confirmationcomponent';
+// import Moviecomponent from './components/Moviecomponent';
+// import Timecomponent from './components/Timecomponent';
+// import Seatcomponent from './components/Seatcomponent';
+// import Confirmationcomponent from './components/Confirmationcomponent';
 
 function App() {
 

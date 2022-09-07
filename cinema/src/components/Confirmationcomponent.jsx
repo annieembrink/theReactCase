@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 
 const Confirmationcomponent = (props) => {
     return (  
@@ -7,7 +6,7 @@ const Confirmationcomponent = (props) => {
             <div>
                 <p>Film: {props.props.chosenMovie[0].movie}</p>
                 <p>Tid: {props.props.chosenTime[0].time}</p>
-                {props.props.chosenSeats.map(seat => <p>Du har bokat följande platser: {seat}</p>)}
+                <p>Du har bokat följande platser: {props.props.chosenSeats.map(seat => seat + ', ')}</p>
             </div>
         </div>
     );

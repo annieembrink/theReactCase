@@ -1,28 +1,37 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Seatcomponent = (props) => {
    
-        function test() {
+        function submitButton() {
             console.log('hej')
         }
-    
-        // function clickedSeat(theSeat) {
-        //     console.log(theSeat)
-        //     console.log(theSeat.clicked)
-        //     if (theSeat === true) {
-        //         theSeat.className = 'taken'
-        //     } 
-        // }
 
-        let seat = props.props.chosenTime.map(theMovie => theMovie.seats.map(seat => seat.id));
+        const [theBookedSeats, setTheBookedSeats] = useState([]);
+ 
+        // let seat = props.props.chosenTime.map(theMovie => theMovie.seats.map(seat => seat.id));
 
-        let oneSeat = seat.map(oneSeat => oneSeat)
+        // let oneSeat = seat[0].map(oneSeat => oneSeat)
+        // console.log('oneSeat', oneSeat)
 
-        // console.log('seat', seat, 'oneSeat', oneSeat)
+        // let bookedSeat = props.props.chosenSeats.filter(oneBookedSeat => oneBookedSeat === oneSeat)
 
-        // let isMarked = props.props.chosenSeats.filter(id => id === oneSeat.map(seat => seat))
-        // console.log('isMarked', isMarked)
-    
+        function onClickAddClass(e, seat) {
+
+            // let bookedSeat = props.props.chosenSeats.map(oneBookedSeat => setMarkedSeat(oneBookedSeat))
+
+            if (e.target.className === 'oneSeat taken') {
+                e.target.className = 'oneSeat taken'
+            } else if (e.target.className === 'oneSeat free') {
+                e.target.className = 'oneSeat booked';
+                props.props.setChosenSeats([...props.props.chosenSeats, seat.id])
+            } else {
+                e.target.className = 'oneSeat free';
+            }
+        }
+
+        console.log('theBookedSeats', theBookedSeats)
+
 return (
     
     <div>
@@ -30,17 +39,15 @@ return (
 
         {props.props.chosenTime.map((theMovie) => (
             <div className='theSeats'>
-                <form onSubmit={test}>
+                <form onSubmit={submitButton}>
                 <div className='seatContainer'>
                     {theMovie.seats.map((seat) => (
                         
-                        <div className={'oneSeat ' + (seat.availability ? 'free' : 'taken')} onClick={() => seat.availability ? props.props.setChosenSeats([...props.props.chosenSeats, seat.id]) : props.props.setChosenSeats([...props.props.chosenSeats, seat.id])}>{seat.id + 1}</div>
-
-                        // <div className={'oneSeat ' + (seat.availability ? 'free' : 'taken')} onClick={() => seat.availability ? clickedSeat(seat) : clickedSeat(seat)}>{seat.id + 1}</div>
+                        <div className={'oneSeat ' + (seat.availability ? 'free' : 'taken')} onClick={(e) => onClickAddClass(e, seat)}>{seat.id}</div>
                     ))}
                     </div>
 
-                    <Link to={`/confirmation/${'bye'}`}><button type='submit'>Boka!</button></Link>
+                    <Link to={`/confirmation/${'bye'}`}><button className='submitButton' type='submit'>Boka!</button></Link>
                 </form>
             </div>
         ))}

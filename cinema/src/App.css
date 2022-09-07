@@ -36,14 +36,23 @@
 .oneSeat {
   display: inline-block;
   padding: 5px;
-  border: 1px solid black;
+  border-radius: 5px;
   margin: 5px;
+  color: black;
 }
 
 .taken {
   background-color: red;
 }
 
+.booked {
+  background-color: blue;
+}
+
 .free {
   background-color: green;
+}
+
+.submitButton {
+  padding: 5px;
 }
