@@ -1,16 +1,20 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import Timecomponent from "../components/Timecomponent"
 
 function Time(props) {
 
-    const chosenTime = (clickedTime) => {
-        const chosenTimeObject = props.chosenMovie.filter(movie => movie.time === clickedTime)
-        return chosenTimeObject
-    }
+    // const chosenTime = (clickedTime) => {
+    //     const chosenTimeObject = props.chosenMovie.filter(movie => movie.time === clickedTime)
+    //     return chosenTimeObject
+    // }
+
     return (
         <div>
-            <h1>Time</h1>
+            <Timecomponent props={props}/>
+
+            {/* <h1>Pick a time!</h1>
             
-            {props.chosenMovie.map(m => <Link className='linkStyle' to={`/seats/${m.time}`}><div className='timeFlex'><p className='timeLinks' onClick={() => props.setChosenTime(chosenTime(m.time))}>{m.time}</p></div></Link>)}
+            {props.chosenMovie.map(m => <Link className='linkStyle' to={`/seats/${m.time}`}><div className='timeFlex'><p className='timeLinks' onClick={() => props.setChosenTime(chosenTime(m.time))}>{m.time}</p></div></Link>)} */}
   
         </div>
     )

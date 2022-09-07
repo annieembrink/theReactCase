@@ -26,8 +26,24 @@
   color: white;
 }
 
+.seatContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border: 1px solid black;
+  margin: 10px 0;
+}
+
 .oneSeat {
+  display: inline-block;
   padding: 5px;
   border: 1px solid black;
   margin: 5px;
+}
+
+.taken {
+  background-color: red;
+}
+
+.free {
+  background-color: green;
 }

@@ -28,34 +28,7 @@ function App() {
     new Set(objects.map(item => item.movie))
   )
 
-  // const chooseMovie = (e) => {
-  //   e.preventDefault();
-  //   const chosenMovieObjects = objects.filter(movie => movie.movie === e.target.innerHTML)
-  //   console.log(chosenMovieObjects)
-  //   setChosenMovie(chosenMovieObjects)
-  // }
-
-  // const chooseTime = (e) => {
-  //   e.preventDefault();
-  //   const chosenTimeObject = chosenMovie.filter(movie => movie.time === e.target.innerHTML)
-  //   setChosenTime(chosenTimeObject)
-
-  //   const areSeatsAvailable = chosenTimeObject.map(seats => {
-  //       return seats.seats.map(seat => seat.availability)
-  //     })
-  //     setCheckedSeat(areSeatsAvailable)
-  // }
-
-  // const clickedInput = (e) => {
-  //   e.preventDefault();
-  // }
-
-  // const submitSeats = (e) => {
-  //     e.preventDefault();
-  //     console.log(e.target)
-  // }
-
-console.log('chosentime', chosenTime)
+console.log('chosenSeat', chosenSeats, 'chosenTime', chosenTime.map(seats => seats.seats.map(seat => seat.availability)))
 
   return (
     <div className="App">
@@ -65,7 +38,7 @@ console.log('chosentime', chosenTime)
         <Route path ="/time/:title" element={ <Time chosenMovie={chosenMovie} setChosenTime={setChosenTime}/> }/>
         <Route path ="/seats" element={ <Seats/> }/>
         <Route path ="/seats/:time" element={ <Seats chosenTime={chosenTime} setChosenSeats={setChosenSeats}/> }/>
-        <Route path ="/confirmation" element={ <Confirmation/> }/>
+        <Route path ="/confirmation/:bye" element={ <Confirmation/> }/>
       </Routes>
     </div>
   );
