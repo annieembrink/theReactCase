@@ -5,10 +5,7 @@ import Movies from './pages/Movies';
 import Seats from './pages/Seats';
 import Confirmation from './pages/Confirmation';
 import Time from './pages/Time';
-// import Moviecomponent from './components/Moviecomponent';
-// import Timecomponent from './components/Timecomponent';
-// import Seatcomponent from './components/Seatcomponent';
-// import Confirmationcomponent from './components/Confirmationcomponent';
+
 
 function App() {
 
@@ -28,10 +25,11 @@ function App() {
     new Set(objects.map(item => item.movie))
   )
 
-console.log('chosenSeat', chosenSeats, 'chosenTime', chosenTime.map(seats => seats.seats.map(seat => seat.availability)))
+// console.log('chosenSeat', chosenSeats, 'chosenTime', chosenTime.map(seats => seats.seats.map(seat => seat.availability)))
 
   return (
     <div className="App">
+      
       <Routes>
         <Route path ="/" element={ <Movies objects={objects} movies={uniqueMovies} setChosenMovie={setChosenMovie}/> }/>
         <Route path ="/time" element={ <Time chosenMovie={chosenMovie}/> }/>

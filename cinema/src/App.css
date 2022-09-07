@@ -1,7 +1,9 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .App {
@@ -9,16 +11,48 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-
 }
 
-.movieLinks, .timeLinks {
-  display: inline-block;
+img {
+  width: 80%;
+  margin: 20px;
+}
+
+.welcome {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.welcome h1 {
+  margin-bottom: 50px;
+}
+
+.theMovies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.movieCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
   text-decoration: none;
-  background-color: darkcyan;
+  background-color: black;
+  color: white;
   margin: 5px;
   padding: 5px 10px;
   border-radius: 10px;
+  font-size: 1.8rem;
+}
+
+.movieLinks, .timeLinks {
+  background-color: black;
+  color: white;
+  margin-top: 15px;
 }
 
 .linkStyle {

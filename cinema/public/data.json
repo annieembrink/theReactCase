@@ -2,7 +2,8 @@
     {
         "movie": "Titanic",
         "time": "17",
-        "seats": [
+        "imageUrl": "https://img.fruugo.com/product/0/15/14575150_max.jpg",
+        "seats": [  
             {"id": 0, "availability": false},
             {"id": 1, "availability": false},
             {"id": 2, "availability": true},
@@ -18,6 +19,7 @@
     {
         "movie": "Titanic",
         "time": "18",
+        "imageUrl": "https://img.fruugo.com/product/0/15/14575150_max.jpg",
         "seats": [
             {"id": 0, "availability": true},
             {"id": 1, "availability": true},
@@ -34,6 +36,7 @@
     {
         "movie": "Titanic",
         "time": "19",
+        "imageUrl": "https://img.fruugo.com/product/0/15/14575150_max.jpg",
         "seats": [
             {"id": 0, "availability": true},
             {"id": 1, "availability": true},
@@ -50,6 +53,7 @@
     {
         "movie": "Titanic",
         "time": "20",
+        "imageUrl": "https://img.fruugo.com/product/0/15/14575150_max.jpg",
         "seats": [
             {"id": 0, "availability": false},
             {"id": 1, "availability": true},
@@ -66,6 +70,7 @@
     {
         "movie": "A beautiful mind",
         "time": "17",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b8/A_Beautiful_Mind_Poster.jpg",
         "seats": [
             {"id": 0, "availability": true},
             {"id": 1, "availability": true},
@@ -130,6 +135,7 @@
     {
         "movie": "Brokeback mountain",
         "time": "17",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a1/Brokeback_mountain.jpg", 
         "seats": [
             {"id": 0, "availability": true},
             {"id": 1, "availability": true},
@@ -194,6 +200,7 @@
     {
         "movie": "Utvandrarna",
         "time": "17",
+        "imageUrl": "https://d2iltjk184xms5.cloudfront.net/uploads/photo/file/424480/1a74529bc0c1e7063eddd5564cc5cf1b-artwork-utvandrarna_61c32064770c9.jpg", 
         "seats": [
             {"id": 0, "availability": false},
             {"id": 1, "availability": false},
@@ -256,8 +263,9 @@
         ]
     },
     {
-        "movie": "Star Wars",
+        "movie": "Still Alice",
         "time": "17",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjIzNzAxNjY1Nl5BMl5BanBnXkFtZTgwMDg4ODQxMzE@._V1_.jpg",
         "seats": [
             {"id": 0, "availability": true},
             {"id": 1, "availability": true},
@@ -272,7 +280,7 @@
         ]
     },
     {
-        "movie": "Star Wars",
+        "movie": "Still Alice",
         "time": "18",
         "seats": [
             {"id": 0, "availability": true},
@@ -288,7 +296,7 @@
         ]
     },
     {
-        "movie": "Star Wars",
+        "movie": "Still Alice",
         "time": "19",
         "seats": [
             {"id": 0, "availability": false},
@@ -304,7 +312,7 @@
         ]
     },
     {
-        "movie": "Star Wars",
+        "movie": "Still Alice",
         "time": "20",
         "seats": [
             {"id": 0, "availability": false},

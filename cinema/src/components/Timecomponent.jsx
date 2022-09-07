@@ -13,7 +13,7 @@ const Timecomponent = (props) => {
 
         <h1>Pick a time!</h1>
         
-        {props.props.chosenMovie.map(m => <Link className='linkStyle' to={`/seats/${m.time}`}><div className='timeFlex'><p className='timeLinks' onClick={() => props.props.setChosenTime(chosenTime(m.time))}>{m.time}</p></div></Link>)}
+        {props.props.chosenMovie.map(m => <Link className='linkStyle' to={`/seats/${m.time}`}><div className='timeFlex'><p className='timeLinks' onClick={() => props.props.setChosenTime(chosenTime(m.time))}>{m.time}:00</p></div></Link>)}
 
     </div>
     );
