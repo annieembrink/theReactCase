@@ -1,17 +1,29 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family:'Courier New', Courier, monospace;
+  font-family: 'Poppins', sans-serif;
+  background-color: antiquewhite;
+  /* text-align: center; */
 }
 
-.App {
-  width: 100vw;
+.todaysDate {
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  margin: 10px;
+}
+
+/* .App {
+  width: 400px;
   height: 100vh;
   display: flex;
   justify-content: center;
-}
+} */
 
 img {
   width: 80%;
@@ -19,12 +31,36 @@ img {
 }
 
 .welcome {
-  margin: 20px 10px;
+  margin: 20px 10px 0 10px;
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
   text-align: center;
 }
 
 .welcome h1 {
-  margin-bottom: 50px;
+  margin-bottom: 5px;
+}
+
+.welcome .theScreen {
+  max-width: 50%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.welcome h4 {
+  margin-top: 30px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.pickASeat {
+  font-size: 1.8rem;
 }
 
 .theMovies {
@@ -39,32 +75,79 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 200px;
+  min-height: 100px;
+  max-width: 200px;
   text-decoration: none;
   background-color: black;
   color: white;
   margin: 5px;
   padding: 5px 10px;
-  border-radius: 10px;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
-.movieLinks, .timeLinks {
-  background-color: black;
-  color: white;
+.movieLinks {
+  background-color:brown;
+  color: antiquewhite;
+  padding: 5px 10px;
   margin-top: 15px;
+  font-size: 1rem;
+}
+
+.timeLinks {
+  background-color:brown;
+  color: antiquewhite;
+  padding: 10px 20px;
+  margin: 5px;
 }
 
 .linkStyle {
+  display: flex;
+  justify-content: center;
   text-decoration: none;
   color: white;
+}
+
+.theScreen {
+  min-height: 70px;
+  margin: 25px;
+  position: relative;
+
+  border-radius: 0px;
+  background:black;
+  box-shadow:  5px 5px 10px antiquewhite,
+             -5px -5px 10px antiquewhite;
+}
+
+.topCurtain {
+  background-color:brown;
+  min-height: 20px;
+  border-bottom: 1px solid black;
+}
+
+.leftCurtain {
+  width: 30px;
+  min-height: 70px;
+  background-color: brown;
+}
+
+.rightCurtain {
+  width: 30px;
+  min-height: 70px;
+  background-color: brown;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.theSeats {
+  max-width: 50%;
+  margin: 25%;
 }
 
 .seatContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  border: 1px solid black;
-  margin: 10px 0;
+  margin: 20px;
 }
 
 .oneSeat {
@@ -73,20 +156,48 @@ img {
   border-radius: 5px;
   margin: 5px;
   color: black;
+  text-align: center;
+
+  border-radius: 0px;
+  /* background:antiquewhite; */
+  box-shadow:  5px 5px 10px antiquewhite,
+             -5px -5px 10px antiquewhite;
 }
 
 .taken {
-  background-color: red;
+  background-color:brown;
 }
 
 .booked {
-  background-color: blue;
+  background-color:darkgrey;
 }
 
 .free {
-  background-color: green;
+  background-color:black;
+  color: antiquewhite;
 }
 
 .submitButton {
-  padding: 5px;
+  padding: 5px 10px;
+  border: none;
+  margin-left: 25px;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+}
+
+.confirmedBooking {
+  max-width: 50%;
+  padding: 10px;
+  margin: 0 25%;
+  background-color: black;
+}
+
+.confirmedBooking p {
+  background-color: black;
+  color: antiquewhite;
+}
+
+.thankYou {
+  margin-top: 25%;
 }

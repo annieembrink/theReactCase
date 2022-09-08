@@ -30,15 +30,19 @@ const Seatcomponent = (props) => {
             }
         }
 
-        console.log('theBookedSeats', theBookedSeats)
-
 return (
     
     <div>
-        <h1>Pick a seat or plenty!</h1>
+        <h1 className='pickASeat'>Pick your seats!</h1>
+        <h2>{props.props.chosenMovie[0].movie} at {props.props.chosenTime[0].time}:00</h2>
 
         {props.props.chosenTime.map((theMovie) => (
             <div className='theSeats'>
+                <div className='theScreen'>
+                    <div className='topCurtain'></div>
+                    <div className='leftCurtain'></div>
+                    <div className='rightCurtain'></div>
+                </div>
                 <form onSubmit={submitButton}>
                 <div className='seatContainer'>
                     {theMovie.seats.map((seat) => (

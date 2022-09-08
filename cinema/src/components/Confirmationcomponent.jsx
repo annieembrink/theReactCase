@@ -2,11 +2,11 @@
 const Confirmationcomponent = (props) => {
     return (  
         <div>
-            <h2>Tack för din bokning!</h2>
-            <div>
+            <h2 className="thankYou">Tack för din bokning!</h2>
+            <div className="confirmedBooking">
                 <p>Film: {props.props.chosenMovie[0].movie}</p>
                 <p>Tid: {props.props.chosenTime[0].time}:00</p>
-                <p>Du har bokat följande platser: {props.props.chosenSeats.map(seat => seat + ', ')}</p>
+                <p>Platser: {props.props.chosenSeats.map(seat => seat + ', ')}</p>
             </div>
         </div>
     );

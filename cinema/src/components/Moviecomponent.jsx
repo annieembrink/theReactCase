@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Moviescreencomponent from './Moviescreencomponent';
 
 const Moviecomponent = (props) => {
 
@@ -28,9 +29,13 @@ const Moviecomponent = (props) => {
     return (  
 
     <div>
+
         <div className="welcome">
-            <h1>Welcome to the cinema!</h1>
-            <h2>Pick a movie!</h2>
+            <h1>Welcome to</h1>
+            <h3>The Tiny Theatre</h3>
+            <Moviescreencomponent/>
+            <h4>Pick a movie!</h4>
+
         </div>
 
         
