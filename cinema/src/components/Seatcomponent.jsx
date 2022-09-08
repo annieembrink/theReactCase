@@ -1,32 +1,44 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import Moviescreencomponent from './Moviescreencomponent';
+import { useNavigate } from 'react-router-dom';
 
 const Seatcomponent = (props) => {
-   
-        function submitButton() {
-            console.log('hej')
+
+    const [getEvent, setGetEvent] = useState();
+    const seat = props.props.chosenSeats.map(seat => seat)
+    let isMarked = props.props.marked.filter(seatId => seatId === seat.id)
+    const navigate = useNavigate();
+
+        console.log('chosenSeats', props.props.chosenSeats)
+        console.log('marked', props.props.marked)
+        console.log('isMarked', isMarked)
+
+        const submitButton = (e) => {
+            e.preventDefault();
+            navigate('/confirmation')
         }
 
-        const [theBookedSeats, setTheBookedSeats] = useState([]);
- 
-        // let seat = props.props.chosenTime.map(theMovie => theMovie.seats.map(seat => seat.id));
+        function handleClick(e, id) {
 
-        // let oneSeat = seat[0].map(oneSeat => oneSeat)
-        // console.log('oneSeat', oneSeat)
+            // if (e.target.className === 'oneSeat taken') {
+            //     e.target.className = 'oneSeat taken'
+            // } else if (e.target.className === 'oneSeat free') {
+            //     e.target.className = 'oneSeat booked';
+            //     props.props.setChosenSeats([...props.props.chosenSeats, seat.id])
+            // } else {
+            //     e.target.className = 'oneSeat free';
+            // }
 
-        // let bookedSeat = props.props.chosenSeats.filter(oneBookedSeat => oneBookedSeat === oneSeat)
-
-        function onClickAddClass(e, seat) {
-
-            // let bookedSeat = props.props.chosenSeats.map(oneBookedSeat => setMarkedSeat(oneBookedSeat))
-
-            if (e.target.className === 'oneSeat taken') {
-                e.target.className = 'oneSeat taken'
-            } else if (e.target.className === 'oneSeat free') {
-                e.target.className = 'oneSeat booked';
-                props.props.setChosenSeats([...props.props.chosenSeats, seat.id])
-            } else {
+            if (props.props.marked.filter(number => number === id).length) {
+                console.log('if')
                 e.target.className = 'oneSeat free';
+                let newState = props.props.marked.filter(remove => remove != id)
+                props.props.setMarked(newState)
+            } else {
+                console.log('else')
+                e.target.className = 'oneSeat booked';
+                props.props.setMarked([...props.props.marked, id])
             }
         }
 
@@ -38,20 +50,18 @@ return (
 
         {props.props.chosenTime.map((theMovie) => (
             <div className='theSeats'>
-                <div className='theScreen'>
-                    <div className='topCurtain'></div>
-                    <div className='leftCurtain'></div>
-                    <div className='rightCurtain'></div>
-                </div>
+                <Moviescreencomponent/>
+            
                 <form onSubmit={submitButton}>
                 <div className='seatContainer'>
                     {theMovie.seats.map((seat) => (
                         
-                        <div className={'oneSeat ' + (seat.availability ? 'free' : 'taken')} onClick={(e) => onClickAddClass(e, seat)}>{seat.id}</div>
+                        <div id={seat.id} className={'oneSeat ' + (seat.availability ? 'free' : 'taken')} onClick={(e) => handleClick(e, seat)}>{seat.id}</div>
                     ))}
                     </div>
 
-                    <Link to={`/confirmation/${'bye'}`}><button className='submitButton' type='submit'>Boka!</button></Link>
+                        <button className='submitButton' type='submit'>Boka!</button>
+                        
                 </form>
             </div>
         ))}

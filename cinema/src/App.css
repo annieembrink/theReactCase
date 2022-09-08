@@ -8,7 +8,6 @@
   font-family:'Courier New', Courier, monospace;
   font-family: 'Poppins', sans-serif;
   background-color: antiquewhite;
-  /* text-align: center; */
 }
 
 .todaysDate {
@@ -17,13 +16,6 @@
   width: 5px;
   margin: 10px;
 }
-
-/* .App {
-  width: 400px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-} */
 
 img {
   width: 80%;
@@ -44,7 +36,7 @@ h1, h2, h3, h4 {
 }
 
 .welcome .theScreen {
-  max-width: 50%;
+  max-width: 200px;
   margin: auto;
   margin-top: 5px;
 }
@@ -109,6 +101,7 @@ h2 {
 
 .theScreen {
   min-height: 70px;
+  max-width: 200px;
   margin: 25px;
   position: relative;
 
@@ -148,6 +141,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 20px;
+  max-width: 200px;
 }
 
 .oneSeat {
@@ -159,7 +153,6 @@ h2 {
   text-align: center;
 
   border-radius: 0px;
-  /* background:antiquewhite; */
   box-shadow:  5px 5px 10px antiquewhite,
              -5px -5px 10px antiquewhite;
 }
