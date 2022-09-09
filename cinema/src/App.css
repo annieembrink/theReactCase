@@ -7,7 +7,11 @@
   box-sizing: border-box;
   font-family:'Courier New', Courier, monospace;
   font-family: 'Poppins', sans-serif;
-  background-color: antiquewhite;
+}
+
+.App {
+  background-color: black;
+  min-height: 100vh;
 }
 
 .todaysDate {
@@ -17,9 +21,51 @@
   margin: 10px;
 }
 
+.movieCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  width: 200px;
+  margin-top: 20px;
+
+  position: relative;
+}
+
 img {
-  width: 80%;
-  margin: 20px;
+  width: 100%;
+}
+
+.movieLinks {
+  display: flex;
+  font-size: 3rem;
+  width: 200px;
+  height: 50%;
+  color: antiquewhite;
+  padding-bottom: 30px;
+  font-size: 1rem;
+  top: 500px;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(0,0,0,1) 100%);
+
+}
+
+.movieLinks p {
+  padding: 10px;
+  background-color: none;
+  position: absolute;
+  top: 100px;
+}
+
+.linkStyle {
+  width: 200px;
+  margin: auto;
 }
 
 .welcome {
@@ -29,6 +75,7 @@ img {
 
 h1, h2, h3, h4 {
   text-align: center;
+  color: antiquewhite;
 }
 
 .welcome h1 {
@@ -62,29 +109,6 @@ h2 {
   padding: 10px;
 }
 
-.movieCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100px;
-  max-width: 200px;
-  text-decoration: none;
-  background-color: black;
-  color: white;
-  margin: 5px;
-  padding: 5px 10px;
-  font-size: 1.5rem;
-}
-
-.movieLinks {
-  background-color:brown;
-  color: antiquewhite;
-  padding: 5px 10px;
-  margin-top: 15px;
-  font-size: 1rem;
-}
-
 .timeLinks {
   background-color:brown;
   color: antiquewhite;
@@ -104,23 +128,25 @@ h2 {
   max-width: 200px;
   margin: 25px;
   position: relative;
-
-  border-radius: 0px;
-  background:black;
-  box-shadow:  5px 5px 10px antiquewhite,
-             -5px -5px 10px antiquewhite;
+  background-color:black;
 }
+
 
 .topCurtain {
   background-color:brown;
-  min-height: 20px;
+  min-height: 30px;
   border-bottom: 1px solid black;
+
+  
 }
 
 .leftCurtain {
   width: 30px;
   min-height: 70px;
   background-color: brown;
+
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(165,45,45,1) 4%);
 }
 
 .rightCurtain {
@@ -130,11 +156,14 @@ h2 {
   position: absolute;
   right: 0;
   bottom: 0;
+
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(165,45,45,1) 4%);
 }
 
 .theSeats {
-  max-width: 50%;
-  margin: 25%;
+  max-width: 200px;
+  margin: auto;
 }
 
 .seatContainer {
@@ -147,14 +176,10 @@ h2 {
 .oneSeat {
   display: inline-block;
   padding: 5px;
-  border-radius: 5px;
   margin: 5px;
-  color: black;
+  color: antiquewhite;
   text-align: center;
-
-  border-radius: 0px;
-  box-shadow:  5px 5px 10px antiquewhite,
-             -5px -5px 10px antiquewhite;
+  cursor: pointer;
 }
 
 .taken {
@@ -166,8 +191,8 @@ h2 {
 }
 
 .free {
-  background-color:black;
-  color: antiquewhite;
+  background-color:antiquewhite;
+  color: black;
 }
 
 .submitButton {
@@ -175,22 +200,33 @@ h2 {
   border: none;
   margin-left: 25px;
   font-size: 1rem;
-  background-color: black;
-  color: white;
+  background-color: antiquewhite;
+  color: black;
+  cursor: pointer;
 }
 
 .confirmedBooking {
-  max-width: 50%;
+  max-width: 300px;
   padding: 10px;
-  margin: 0 25%;
-  background-color: black;
+  margin: 0 auto;
+  background-color:brown;
 }
 
 .confirmedBooking p {
-  background-color: black;
+  background-color:brown;
   color: antiquewhite;
 }
 
-.thankYou {
-  margin-top: 25%;
+@media (min-width:801px) {
+  .theMovies {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .timeContainer {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
 }

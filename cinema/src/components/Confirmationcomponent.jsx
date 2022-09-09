@@ -6,7 +6,7 @@ const Confirmationcomponent = (props) => {
             <div className="confirmedBooking">
                 <p>Film: {props.props.chosenMovie[0].movie}</p>
                 <p>Tid: {props.props.chosenTime[0].time}:00</p>
-                <p>Platser: {props.props.marked.map(seat => seat.id + ', ')}</p>
+                <p>Platsnummer: {props.props.marked.map(seat => (seat.id + 1) + ', ')}</p>
             </div>
         </div>
     );

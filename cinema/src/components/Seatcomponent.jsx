@@ -21,25 +21,20 @@ const Seatcomponent = (props) => {
 
         function handleClick(e, id) {
 
-            // if (e.target.className === 'oneSeat taken') {
-            //     e.target.className = 'oneSeat taken'
-            // } else if (e.target.className === 'oneSeat free') {
-            //     e.target.className = 'oneSeat booked';
-            //     props.props.setChosenSeats([...props.props.chosenSeats, seat.id])
-            // } else {
-            //     e.target.className = 'oneSeat free';
-            // }
-
-            if (props.props.marked.filter(number => number === id).length) {
-                console.log('if')
-                e.target.className = 'oneSeat free';
-                let newState = props.props.marked.filter(remove => remove != id)
-                props.props.setMarked(newState)
+            if (e.target.className === 'oneSeat taken') {
+                //do nothing
             } else {
-                console.log('else')
-                e.target.className = 'oneSeat booked';
-                props.props.setMarked([...props.props.marked, id])
+                if (props.props.marked.filter(number => number === id).length) {
+                    e.target.className = 'oneSeat free';
+                    let newState = props.props.marked.filter(remove => remove != id)
+                    props.props.setMarked(newState)
+                } else {
+                    e.target.className = 'oneSeat booked';
+                    props.props.setMarked([...props.props.marked, id])
+                }
             }
+
+           
         }
 
 return (
@@ -56,7 +51,7 @@ return (
                 <div className='seatContainer'>
                     {theMovie.seats.map((seat) => (
                         
-                        <div id={seat.id} className={'oneSeat ' + (seat.availability ? 'free' : 'taken')} onClick={(e) => handleClick(e, seat)}>{seat.id}</div>
+                        <div id={seat.id} className={'oneSeat ' + (seat.availability ? 'free' : 'taken')} onClick={(e) => handleClick(e, seat)}>{seat.id + 1}</div>
                     ))}
                     </div>
 

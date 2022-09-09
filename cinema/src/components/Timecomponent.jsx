@@ -11,10 +11,16 @@ const Timecomponent = (props) => {
 
     <div>
 
-        <h1>Pick a time!</h1>
         <h2>{props.props.chosenMovie[0].movie}</h2>
-        
-        {props.props.chosenMovie.map(m => <Link className='linkStyle' to={`/seats/${m.time}`}><div className='timeFlex'><p className='timeLinks' onClick={() => props.props.setChosenTime(chosenTime(m.time))}>{m.time}:00</p></div></Link>)}
+        <div className="timeContainer">
+            {props.props.chosenMovie.map(m => 
+            <Link className='linkStyle' to={`/seats/${m.time}`}>
+                <div className='timeFlex'>
+                    <p className='timeLinks' onClick={() => props.props.setChosenTime(chosenTime(m.time))}>
+                        {m.time}:00</p>
+                </div>
+            </Link>)}
+        </div>
 
     </div>
     );
