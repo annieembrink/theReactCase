@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Moviescreencomponent from './Moviescreencomponent';
 import { useNavigate } from 'react-router-dom';
@@ -9,10 +8,6 @@ const Seatcomponent = (props) => {
     const seat = props.props.chosenSeats.map(seat => seat)
     let isMarked = props.props.marked.filter(seatId => seatId === seat.id)
     const navigate = useNavigate();
-
-        console.log('chosenSeats', props.props.chosenSeats)
-        console.log('marked', props.props.marked)
-        console.log('isMarked', isMarked)
 
         const submitButton = (e) => {
             e.preventDefault();
@@ -40,7 +35,6 @@ const Seatcomponent = (props) => {
 return (
     
     <div>
-        <h1 className='pickASeat'>Pick your seats!</h1>
         <h2>{props.props.chosenMovie[0].movie} at {props.props.chosenTime[0].time}:00</h2>
 
         {props.props.chosenTime.map((theMovie) => (

@@ -29,20 +29,21 @@ const Moviecomponent = (props) => {
     return (  
 
     <div>
-
         <div className="welcome">
             <h3>The Tiny Theatre</h3>
             <Moviescreencomponent/>
         </div>
-
-        
-        
+ 
         <div className='theMovies'>
-            {props.props.movies.map(m => <Link className='linkStyle' to={`/time/${m}`}>
+            {props.props.movies.map(m => 
+            <Link className='linkStyle' to={`/time/${m}`}>
                 <div className='movieCard' onClick={() => props.props.setChosenMovie(chosenObjects(m))}>
-                <div className='movieLinks'><p>{m}</p></div>
-                <img src={movieImg(m)} alt=""></img>
-                </div></Link>)}
+                    <div className='movieLinks'>
+                        <p>{m}</p>
+                    </div>
+                    <img src={movieImg(m)} alt=""></img>
+                </div>
+            </Link>)}
         </div>
     </div>
     

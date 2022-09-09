@@ -136,8 +136,6 @@ h2 {
   background-color:brown;
   min-height: 30px;
   border-bottom: 1px solid black;
-
-  
 }
 
 .leftCurtain {
@@ -220,6 +218,8 @@ h2 {
 @media (min-width:801px) {
   .theMovies {
     flex-direction: row;
+    max-width: 70%;
+    margin: auto;
     gap: 20px;
   }
 
