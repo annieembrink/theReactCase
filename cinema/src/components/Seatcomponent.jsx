@@ -48,6 +48,14 @@ return (
                         <div id={seat.id} className={'oneSeat ' + (seat.availability ? 'free' : 'taken')} onClick={(e) => handleClick(e, seat)}>{seat.id + 1}</div>
                     ))}
                     </div>
+                    <div className="colorMeaning">
+                        <div className="free"></div>
+                        <p>Free</p>
+                        <div className="taken"></div>
+                        <p>Taken</p>
+                        <div className="booked"></div>
+                        <p>Booked</p>
+                    </div>
 
                         <button className='submitButton' type='submit'>Submit</button>
                         
