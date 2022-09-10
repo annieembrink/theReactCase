@@ -25,6 +25,7 @@ const Moviecomponent = (props) => {
     return (  
 
     <div>
+   
         <div className="welcome">
             <h3>The Tiny Theatre</h3>
             <Moviescreencomponent/>

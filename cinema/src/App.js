@@ -7,6 +7,7 @@ import Confirmation from './pages/Confirmation';
 import Time from './pages/Time';
 import Datecomponent from './components/Datecomponent';
 import Moviescreencomponent from './components/Moviescreencomponent';
+import Header from './components/Header';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -30,7 +31,8 @@ function App() {
 
   return (
     <div className="App">
-    <Datecomponent/>
+    {/* <Datecomponent/> */}
+    <Header/>
       <Routes>
         <Route path ="/" element={ <Movies objects={objects} movies={uniqueMovies} setChosenMovie={setChosenMovie} Moviescreencomponent={<Moviescreencomponent/>}/> }/>
         <Route path ="/time" element={ <Time chosenMovie={chosenMovie}/> }/>

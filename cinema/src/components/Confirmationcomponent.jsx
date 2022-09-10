@@ -15,15 +15,15 @@ const Confirmationcomponent = (props) => {
     }
 
     return (  
-        <div>
+        <div className="confirmationDiv">
             {/* <Navbar 
             chosenMovie={props.props.chosenMovie} setChosenMovie={props.props.setChosenMovie}
             /> */}
-            <h2 className="thankYou">Thanks for your booking!</h2>
+            <h3 className="thankYou">Thanks for your booking!</h3>
             <div className="confirmedBooking">
                 <p>Movie: {props.props.chosenMovie[0].movie}</p>
                 <p>Time: {props.props.chosenTime[0].time}:00</p>
-                <p>Seats: {props.props.marked.map(seat => seat.id + 1).join(', ')}</p>
+                <p>Seats: {props.props.marked.map(seat => seat.id + 1).sort().join(', ')}</p>
             </div>
 
             <button className="newBooking" onClick={handleClick}>New booking</button>
