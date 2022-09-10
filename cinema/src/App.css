@@ -28,13 +28,15 @@
   align-items: center;
   min-height: 100px;
   width: 200px;
-  margin-top: 20px;
+  margin-top: 40px;
 
   position: relative;
 }
 
 img {
   width: 100%;
+  border-radius: 5px;
+
 }
 
 .movieLinks {
@@ -69,7 +71,6 @@ img {
 }
 
 .welcome {
-  margin: 20px 10px 0 10px;
   text-align: center;
 }
 
@@ -79,24 +80,22 @@ h1, h2, h3, h4 {
 }
 
 .welcome h1 {
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 
 .welcome .theScreen {
   max-width: 200px;
   margin: auto;
-  margin-top: 5px;
+  /* transform: scale(0.5); */
 }
 
-.welcome h4 {
-  margin-top: 30px;
-}
 
 h2 {
   text-align: center;
   margin-bottom: 10px;
   font-size: 1rem;
 }
+
 
 .pickASeat {
   font-size: 1.8rem;
@@ -114,6 +113,7 @@ h2 {
   color: antiquewhite;
   padding: 10px 20px;
   margin: 5px;
+  border-radius: 5px;
 }
 
 .linkStyle {
@@ -178,6 +178,7 @@ h2 {
   color: antiquewhite;
   text-align: center;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .taken {
@@ -197,10 +198,22 @@ h2 {
   padding: 5px 10px;
   border: none;
   margin-left: 25px;
-  font-size: 1rem;
+  font-size: 0.7rem;
   background-color: antiquewhite;
   color: black;
   cursor: pointer;
+  border-radius: 5px;
+}
+
+.newBooking {
+  padding: 5px 10px;
+  border: none;
+  margin: 20px 45px;
+  font-size: 0.7rem;
+  background-color: antiquewhite;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .confirmedBooking {
@@ -208,6 +221,7 @@ h2 {
   padding: 10px;
   margin: 0 auto;
   background-color:brown;
+  border-radius: 5px;
 }
 
 .confirmedBooking p {

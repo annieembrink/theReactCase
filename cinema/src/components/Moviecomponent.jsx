@@ -7,10 +7,6 @@ const Moviecomponent = (props) => {
         const theChosenObjects = props.props.objects.filter(movie => movie.movie === clickedMovie)
         return theChosenObjects
     }
-    
-    // let theMovieImg = props.props.objects[0].imageUrl;
-
-    // console.log(theMovieImg)
 
     function movieImg(m) {
         if (m === 'Titanic') {

@@ -7,6 +7,7 @@ import Confirmation from './pages/Confirmation';
 import Time from './pages/Time';
 import Datecomponent from './components/Datecomponent';
 import Moviescreencomponent from './components/Moviescreencomponent';
+import Navbar from './components/Navbar';
 
 function App() {
 
@@ -27,8 +28,6 @@ function App() {
     new Set(objects.map(item => item.movie))
   )
 
-// console.log('chosenSeat', chosenSeats, 'chosenTime', chosenTime.map(seats => seats.seats.map(seat => seat.availability)))
-
   return (
     <div className="App">
     <Datecomponent/>
@@ -38,7 +37,17 @@ function App() {
         <Route path ="/time/:title" element={ <Time chosenMovie={chosenMovie} setChosenTime={setChosenTime}/> }/>
         <Route path ="/seats" element={ <Seats/> }/>
         <Route path ="/seats/:time" element={ <Seats chosenTime={chosenTime} chosenSeats={chosenSeats} setChosenSeats={setChosenSeats} chosenMovie={chosenMovie} Moviescreencomponent={<Moviescreencomponent/>} marked={marked} setMarked={setMarked}/> }/>
-        <Route path ="/confirmation" element={ <Confirmation chosenMovie={chosenMovie} chosenTime={chosenTime} chosenSeats={chosenSeats} marked={marked} setMarked={setMarked}/> }/>
+        <Route path ="/confirmation" element={ 
+        <Confirmation 
+          chosenMovie={chosenMovie} 
+          chosenTime={chosenTime} 
+          chosenSeats={chosenSeats} 
+          marked={marked} 
+          setMarked={setMarked} 
+          setChosenSeats={setChosenSeats} 
+          setChosenMovie={setChosenMovie} 
+          setChosenTime={setChosenTime} 
+        /> }/>
       </Routes>
     </div>
   );

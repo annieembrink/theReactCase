@@ -1,12 +1,12 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import Moviescreencomponent from './Moviescreencomponent';
 import { useNavigate } from 'react-router-dom';
 
 const Seatcomponent = (props) => {
 
-    const [getEvent, setGetEvent] = useState();
-    const seat = props.props.chosenSeats.map(seat => seat)
-    let isMarked = props.props.marked.filter(seatId => seatId === seat.id)
+    // const [getEvent, setGetEvent] = useState();
+    // const seat = props.props.chosenSeats.map(seat => seat)
+    // let isMarked = props.props.marked.filter(seatId => seatId === seat.id)
     const navigate = useNavigate();
 
         const submitButton = (e) => {
@@ -49,7 +49,7 @@ return (
                     ))}
                     </div>
 
-                        <button className='submitButton' type='submit'>Boka!</button>
+                        <button className='submitButton' type='submit'>Submit</button>
                         
                 </form>
             </div>
