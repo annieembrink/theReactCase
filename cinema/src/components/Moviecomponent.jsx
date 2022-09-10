@@ -33,7 +33,7 @@ const Moviecomponent = (props) => {
  
         <div className='theMovies'>
             {props.props.movies.map(m => 
-            <Link className='linkStyle' to={`/time/${m}`}>
+            <Link className='linkStyle' to={`/time`}>
                 <div className='movieCard' onClick={() => props.props.setChosenMovie(chosenObjects(m))}>
                     <div className='movieLinks'>
                         <p>{m}</p>

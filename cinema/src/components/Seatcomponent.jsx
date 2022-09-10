@@ -1,17 +1,25 @@
-// import { useState } from 'react';
 import Moviescreencomponent from './Moviescreencomponent';
 import { useNavigate } from 'react-router-dom';
 
 const Seatcomponent = (props) => {
 
-    // const [getEvent, setGetEvent] = useState();
-    // const seat = props.props.chosenSeats.map(seat => seat)
-    // let isMarked = props.props.marked.filter(seatId => seatId === seat.id)
+
     const navigate = useNavigate();
 
         const submitButton = (e) => {
             e.preventDefault();
-            navigate('/confirmation')
+            if (props.props.marked.length > 0) {
+                navigate('/confirmation')
+            } else {
+                alert('You have to choose at least one seat')
+                console.log('choose seats')
+            }
+        }
+
+        function handleGoBack() {
+            props.props.setChosenTime([]);
+            props.props.setMarked([])
+            navigate('/time')
         }
 
         function handleClick(e, id) {
@@ -28,8 +36,6 @@ const Seatcomponent = (props) => {
                     props.props.setMarked([...props.props.marked, id])
                 }
             }
-
-           
         }
 
 return (
@@ -62,6 +68,7 @@ return (
                 </form>
             </div>
         ))}
+        <button onClick={handleGoBack} className="backToTime">Go back</button>
     </div>
         
     );

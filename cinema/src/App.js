@@ -29,16 +29,27 @@ function App() {
     new Set(objects.map(item => item.movie))
   )
 
+  console.log('chosenMovie', chosenMovie)
+  console.log('chosenTime', chosenTime)
+  console.log('chosenSeats', chosenSeats)
+  console.log('marked', marked)
+
   return (
     <div className="App">
     {/* <Datecomponent/> */}
     <Header/>
       <Routes>
         <Route path ="/" element={ <Movies objects={objects} movies={uniqueMovies} setChosenMovie={setChosenMovie} Moviescreencomponent={<Moviescreencomponent/>}/> }/>
-        <Route path ="/time" element={ <Time chosenMovie={chosenMovie}/> }/>
-        <Route path ="/time/:title" element={ <Time chosenMovie={chosenMovie} setChosenTime={setChosenTime}/> }/>
-        <Route path ="/seats" element={ <Seats/> }/>
-        <Route path ="/seats/:time" element={ <Seats chosenTime={chosenTime} chosenSeats={chosenSeats} setChosenSeats={setChosenSeats} chosenMovie={chosenMovie} Moviescreencomponent={<Moviescreencomponent/>} marked={marked} setMarked={setMarked}/> }/>
+        {/* <Route path ="/time" element={ <Time chosenMovie={chosenMovie}/> }/> */}
+        <Route path ="/time" element={ <Time chosenMovie={chosenMovie} setChosenTime={setChosenTime} setChosenMovie={setChosenMovie}/> }/>
+        {/* <Route path ="/seats" element={ <Seats/> }/> */}
+        <Route path ="/seats" element={ <Seats chosenTime={chosenTime} 
+        chosenSeats={chosenSeats} 
+        setChosenTime={setChosenTime}
+        setChosenSeats={setChosenSeats} 
+        chosenMovie={chosenMovie} 
+        Moviescreencomponent={<Moviescreencomponent/>} marked={marked} 
+        setMarked={setMarked}/> }/>
         <Route path ="/confirmation" element={ 
         <Confirmation 
           chosenMovie={chosenMovie} 

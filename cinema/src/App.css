@@ -226,6 +226,22 @@ h1, h2, h3, h4 {
   padding: 5px 10px;
   border: none;
   font-size: 0.7rem;
+  margin-top: 10px;
+  background-color: antiquewhite;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.backToMovies, .backToTime {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+
+  padding: 5px 10px;
+  border: none;
+  font-size: 0.7rem;
+  margin-top: 10px;
   background-color: antiquewhite;
   color: black;
   cursor: pointer;

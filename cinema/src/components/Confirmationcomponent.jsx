@@ -14,6 +14,10 @@ const Confirmationcomponent = (props) => {
         navigate('/')
     }
 
+    function sortIt(a, b) {
+        return (a-b)
+    }
+
     return (  
         <div className="confirmationDiv">
             {/* <Navbar 
@@ -23,7 +27,7 @@ const Confirmationcomponent = (props) => {
             <div className="confirmedBooking">
                 <p>Movie: {props.props.chosenMovie[0].movie}</p>
                 <p>Time: {props.props.chosenTime[0].time}:00</p>
-                <p>Seats: {props.props.marked.map(seat => seat.id + 1).sort().join(', ')}</p>
+                <p>Seats: {props.props.marked.map(seat => seat.id + 1).sort(sortIt).join(', ')}</p>
             </div>
 
             <button className="newBooking" onClick={handleClick}>New booking</button>
