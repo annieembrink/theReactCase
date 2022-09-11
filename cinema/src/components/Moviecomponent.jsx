@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Moviescreencomponent from './Moviescreencomponent';
+
 
 const Moviecomponent = (props) => {
 
@@ -25,20 +25,16 @@ const Moviecomponent = (props) => {
     return (  
 
     <div>
-   
-        <div className="welcome">
-            <h3>The Tiny Theatre</h3>
-            <Moviescreencomponent/>
-        </div>
  
         <div className='theMovies'>
             {props.props.movies.map(m => 
             <Link className='linkStyle' to={`/time`}>
                 <div className='movieCard' onClick={() => props.props.setChosenMovie(chosenObjects(m))}>
+                    
+                    <img src={movieImg(m)} alt=""></img>
                     <div className='movieLinks'>
                         <p>{m}</p>
                     </div>
-                    <img src={movieImg(m)} alt=""></img>
                 </div>
             </Link>)}
         </div>
