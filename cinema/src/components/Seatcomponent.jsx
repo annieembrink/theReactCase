@@ -22,6 +22,10 @@ const Seatcomponent = (props) => {
             navigate('/time')
         }
 
+        function generateMovie() {
+            return props.props.chosenMovie[0].imageUrl
+        }
+
         function handleClick(e, id) {
 
             if (e.target.className === 'oneSeat taken') {
@@ -41,10 +45,15 @@ const Seatcomponent = (props) => {
 return (
     
     <div className='theGreatSeatDiv'>
-        <h2>{props.props.chosenMovie[0].movie} at {props.props.chosenTime[0].time}:00</h2>
+        
+        
+
+        <img src={generateMovie()} alt="" />
+        <div className="gradient"></div>
 
         {props.props.chosenTime.map((theMovie) => (
             <div className='theSeats'>
+                <h2>{props.props.chosenMovie[0].movie} at {props.props.chosenTime[0].time}:00</h2>
                 <Moviescreencomponent/>
             
                 <form onSubmit={submitButton}>

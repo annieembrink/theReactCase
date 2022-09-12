@@ -50,14 +50,12 @@
 /* MOVIE PAGE */
 .theMovies {
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .movieCard {
-  width: 200px;
+  width: 150px;
   margin: auto;
   margin-bottom: 20px;
 }
@@ -68,15 +66,14 @@
 
 .movieLinks p {
   color: darkgray;
+  font-size: 0.8rem;
 }
 
 .movieCard img {
   width: 100%;
   border-radius: 5px;
   filter: grayscale(20%); 
-  border: 7px double goldenrod;
   cursor: pointer;
-
 }
 
 .welcome {
@@ -106,16 +103,16 @@ h1, h2, h3, h4 {
 
 .theGreatTimeDiv {
   display: grid;
-  /* grid-template-rows: 1fr 4fr 1fr; */
   justify-content: center;
   align-items: center;
 }
 
 .theGreatTimeDiv img {
-  max-width: 200px;
+  width: 100vw;
   border-radius: 5px;
   margin: auto;
-  border: 7px double goldenrod;
+  position: absolute;
+  top: 0;
 }
 
 .theGreatTimeDiv p {
@@ -125,12 +122,24 @@ h1, h2, h3, h4 {
   margin-top: 10px;
 }
 
+.theGreatTimeDiv .gradient{
+  height: 100%;
+ left: 0;
+ top: 0;
+}
+
+.headingTimeSeats {
+  margin-top: 300px;
+  z-index: 2;
+}
+
 .timeContainer {
   width: 200px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
 }
 
 .timeLinks {
@@ -185,9 +194,27 @@ h1, h2, h3, h4 {
 
 /* SEAT PAGE */
 
+.theGreatSeatDiv {
+  display: flex;
+  justify-content: center;
+}
+
 .theGreatSeatDiv h2 {
-  max-width: 70%;
   margin: auto;
+}
+
+.theGreatSeatDiv img, .theGreatConfirmationDiv img {
+  width: 100vw;
+  border-radius: 5px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+}
+
+.theGreatSeatDiv .gradient, .theGreatConfirmationDiv .gradient {
+height: 100%;
+ left: 0;
+ top: 0;
 }
 
 .theSeats .theScreen {
@@ -197,15 +224,19 @@ h1, h2, h3, h4 {
   z-index: 2;
 }
 .theSeats {
-  max-width: 200px;
+  width: 200px;
   margin: auto;
+  position: absolute;
+  z-index: 2;
 }
 
 .seatContainer {
+  max-width: 200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 20px;
   max-width: 200px;
+ 
 }
 
 .oneSeat {
@@ -261,6 +292,18 @@ h1, h2, h3, h4 {
 }
 
 /* CONFIRMATION PAGE */
+
+.theGreatConfirmationDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.headingBookingButton {
+  width: 300px;
+  position: absolute;
+
+}
+
 .newBooking {
   padding: 5px 10px;
   border: none;
@@ -272,10 +315,6 @@ h1, h2, h3, h4 {
   border-radius: 5px;
 }
 
-.confirmationDiv {
-  max-width: 300px;
-  margin: auto;
-}
 
 .confirmedBooking {
   max-width: 300px;
@@ -283,10 +322,6 @@ h1, h2, h3, h4 {
   margin: 0 auto;
   background-color:brown;
   border-radius: 5px;
-}
-
-.confirmedBooking p {
-  background-color:brown;
   color: antiquewhite;
 }
 
@@ -299,7 +334,7 @@ h1, h2, h3, h4 {
  position: fixed;
   left: 20px;
   bottom: 10px;
-
+  z-index: 2;
   padding: 5px 10px;
   border: none;
   font-size: 0.7rem;

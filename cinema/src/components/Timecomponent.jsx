@@ -31,8 +31,11 @@ const Timecomponent = (props) => {
     return (
     <div className='theGreatTimeDiv'>
 
-        <h2>{props.props.chosenMovie[0].movie}</h2>
         <img src={generateMovie()} alt="" />
+        <div className="gradient"></div>
+
+<div className="headingTimeSeats">
+        <h2>{props.props.chosenMovie[0].movie}</h2>
         <div className="timeContainer">
             {props.props.chosenMovie.map(m => 
             <>
@@ -42,6 +45,7 @@ const Timecomponent = (props) => {
         </>
 
             )}
+            </div>
 
         </div>
         <button className='backToMovies' onClick={handleClick}>Go back</button>

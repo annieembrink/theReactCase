@@ -18,11 +18,18 @@ const Confirmationcomponent = (props) => {
         return (a-b)
     }
 
+    function generateMovie() {
+        return props.props.chosenMovie[0].imageUrl
+    }
+
     return (  
-        <div className="confirmationDiv">
+        <div className="theGreatConfirmationDiv">
+            <img src={generateMovie()} alt="" />
+            <div className="gradient"></div>
             {/* <Navbar 
             chosenMovie={props.props.chosenMovie} setChosenMovie={props.props.setChosenMovie}
             /> */}
+            <div className="headingBookingButton">
             <h3 className="thankYou">Thanks for your booking!</h3>
             <div className="confirmedBooking">
                 <p>Movie: {props.props.chosenMovie[0].movie}</p>
@@ -31,6 +38,7 @@ const Confirmationcomponent = (props) => {
             </div>
 
             <button className="newBooking" onClick={handleClick}>New booking</button>
+        </div>
         </div>
     );
 }

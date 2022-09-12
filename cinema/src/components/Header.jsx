@@ -1,4 +1,3 @@
-import Moviescreencomponent from "./Moviescreencomponent";
 
 const Header = () => {
     return ( 
@@ -11,7 +10,6 @@ const Header = () => {
 
             <div className="welcome">
                 <h3>The Tiny Theatre</h3>
-                <Moviescreencomponent/>
             </div> 
         </div>
     );
