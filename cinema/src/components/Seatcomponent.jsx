@@ -56,7 +56,7 @@ return (
                     </div>
                     <div className="colorMeaning">
                         <div className="free"></div>
-                        <p>Free</p>
+                        <p>Available</p>
                         <div className="taken"></div>
                         <p>Taken</p>
                         <div className="booked"></div>

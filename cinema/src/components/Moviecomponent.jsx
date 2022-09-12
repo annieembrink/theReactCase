@@ -46,4 +46,4 @@ const Moviecomponent = (props) => {
     );
 }
  
-export default Moviecomponent;
+export default Moviecomponent; 

@@ -8,7 +8,6 @@ import Time from './pages/Time';
 import Datecomponent from './components/Datecomponent';
 import Moviescreencomponent from './components/Moviescreencomponent';
 import Header from './components/Header';
-import Navbar from './components/Navbar';
 
 function App() {
 
@@ -17,6 +16,7 @@ function App() {
   const [chosenTime, setChosenTime] = useState([]);
   const [chosenSeats, setChosenSeats] = useState([]);
   const [marked, setMarked] = useState([]);
+  const [howManySeats, setHowManySeats] = useState([]);
 
   useEffect(() => {
     fetch('data.json')
@@ -29,20 +29,30 @@ function App() {
     new Set(objects.map(item => item.movie))
   )
 
-  console.log('chosenMovie', chosenMovie)
-  console.log('chosenTime', chosenTime)
-  console.log('chosenSeats', chosenSeats)
-  console.log('marked', marked)
+  // console.log('chosenMovie', chosenMovie)
+  // console.log('chosenTime', chosenTime)
+  // console.log('chosenSeats', chosenSeats)
+  // console.log('marked', marked)
 
   return (
     <div className="App">
     <Datecomponent/>
     <Header/>
       <Routes>
-        <Route path ="/" element={ <Movies objects={objects} movies={uniqueMovies} setChosenMovie={setChosenMovie} Moviescreencomponent={<Moviescreencomponent/>}/> }/>
-        {/* <Route path ="/time" element={ <Time chosenMovie={chosenMovie}/> }/> */}
-        <Route path ="/time" element={ <Time chosenMovie={chosenMovie} setChosenTime={setChosenTime} setChosenMovie={setChosenMovie}/> }/>
-        {/* <Route path ="/seats" element={ <Seats/> }/> */}
+        <Route path ="/" element={ <Movies 
+        objects={objects} 
+        movies={uniqueMovies} 
+        setChosenMovie={setChosenMovie} 
+        howManySeats={howManySeats}
+        setHowManySeats={setHowManySeats}Moviescreencomponent={<Moviescreencomponent/>}/> }/>
+       
+        <Route path ="/time" element={ <Time 
+        chosenMovie={chosenMovie} 
+        setChosenTime={setChosenTime} 
+        setChosenMovie={setChosenMovie}
+        howManySeats={howManySeats}
+        setHowManySeats={setHowManySeats}/> }/>
+        
         <Route path ="/seats" element={ <Seats chosenTime={chosenTime} 
         chosenSeats={chosenSeats} 
         setChosenTime={setChosenTime}
@@ -50,6 +60,7 @@ function App() {
         chosenMovie={chosenMovie} 
         Moviescreencomponent={<Moviescreencomponent/>} marked={marked} 
         setMarked={setMarked}/> }/>
+
         <Route path ="/confirmation" element={ 
         <Confirmation 
           chosenMovie={chosenMovie} 
@@ -61,6 +72,7 @@ function App() {
           setChosenMovie={setChosenMovie} 
           setChosenTime={setChosenTime} 
         /> }/>
+
       </Routes>
     </div>
   );
