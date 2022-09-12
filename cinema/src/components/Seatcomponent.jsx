@@ -40,7 +40,7 @@ const Seatcomponent = (props) => {
 
 return (
     
-    <div>
+    <div className='theGreatSeatDiv'>
         <h2>{props.props.chosenMovie[0].movie} at {props.props.chosenTime[0].time}:00</h2>
 
         {props.props.chosenTime.map((theMovie) => (

@@ -87,6 +87,7 @@
     {
         "movie": "A beautiful mind",
         "time": "18",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b8/A_Beautiful_Mind_Poster.jpg",
         "seats": [
             {"id": 0, "availability": false},
             {"id": 1, "availability": true},
@@ -103,6 +104,7 @@
     {
         "movie": "A beautiful mind",
         "time": "19",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b8/A_Beautiful_Mind_Poster.jpg",
         "seats": [
             {"id": 0, "availability": true},
             {"id": 1, "availability": true},
@@ -119,6 +121,7 @@
     {
         "movie": "A beautiful mind",
         "time": "20",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b8/A_Beautiful_Mind_Poster.jpg",
         "seats": [
             {"id": 0, "availability": false},
             {"id": 1, "availability": true},
@@ -152,6 +155,7 @@
     {
         "movie": "Brokeback mountain",
         "time": "18",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a1/Brokeback_mountain.jpg", 
         "seats": [
             {"id": 0, "availability": true},
             {"id": 1, "availability": true},
@@ -168,6 +172,7 @@
     {
         "movie": "Brokeback mountain",
         "time": "19",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a1/Brokeback_mountain.jpg", 
         "seats": [
             {"id": 0, "availability": false},
             {"id": 1, "availability": true},
@@ -184,6 +189,7 @@
     {
         "movie": "Brokeback mountain",
         "time": "20",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a1/Brokeback_mountain.jpg", 
         "seats": [
             {"id": 0, "availability": true},
             {"id": 1, "availability": false},
@@ -217,6 +223,7 @@
     {
         "movie": "Utvandrarna",
         "time": "18",
+        "imageUrl": "https://d2iltjk184xms5.cloudfront.net/uploads/photo/file/424480/1a74529bc0c1e7063eddd5564cc5cf1b-artwork-utvandrarna_61c32064770c9.jpg", 
         "seats": [
             {"id": 0, "availability": true},
             {"id": 1, "availability": true},
@@ -233,6 +240,7 @@
     {
         "movie": "Utvandrarna",
         "time": "19",
+        "imageUrl": "https://d2iltjk184xms5.cloudfront.net/uploads/photo/file/424480/1a74529bc0c1e7063eddd5564cc5cf1b-artwork-utvandrarna_61c32064770c9.jpg", 
         "seats": [
             {"id": 0, "availability": false},
             {"id": 1, "availability": true},
@@ -249,6 +257,7 @@
     {
         "movie": "Utvandrarna",
         "time": "20",
+        "imageUrl": "https://d2iltjk184xms5.cloudfront.net/uploads/photo/file/424480/1a74529bc0c1e7063eddd5564cc5cf1b-artwork-utvandrarna_61c32064770c9.jpg", 
         "seats": [
             {"id": 0, "availability": true},
             {"id": 1, "availability": true},
@@ -282,6 +291,7 @@
     {
         "movie": "Still Alice",
         "time": "18",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjIzNzAxNjY1Nl5BMl5BanBnXkFtZTgwMDg4ODQxMzE@._V1_.jpg",
         "seats": [
             {"id": 0, "availability": true},
             {"id": 1, "availability": true},
@@ -298,6 +308,7 @@
     {
         "movie": "Still Alice",
         "time": "19",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjIzNzAxNjY1Nl5BMl5BanBnXkFtZTgwMDg4ODQxMzE@._V1_.jpg",
         "seats": [
             {"id": 0, "availability": false},
             {"id": 1, "availability": true},
@@ -314,6 +325,7 @@
     {
         "movie": "Still Alice",
         "time": "20",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjIzNzAxNjY1Nl5BMl5BanBnXkFtZTgwMDg4ODQxMzE@._V1_.jpg",
         "seats": [
             {"id": 0, "availability": false},
             {"id": 1, "availability": true},

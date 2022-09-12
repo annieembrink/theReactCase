@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className="App">
-    {/* <Datecomponent/> */}
+    <Datecomponent/>
     <Header/>
       <Routes>
         <Route path ="/" element={ <Movies objects={objects} movies={uniqueMovies} setChosenMovie={setChosenMovie} Moviescreencomponent={<Moviescreencomponent/>}/> }/>

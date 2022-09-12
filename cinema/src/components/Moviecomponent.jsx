@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
-
+import { useNavigate } from 'react-router-dom';
 
 const Moviecomponent = (props) => {
 
+    const navigate = useNavigate();
+
     const chosenObjects = (clickedMovie) => {
+        navigate('/time')
         const theChosenObjects = props.props.objects.filter(movie => movie.movie === clickedMovie)
         return theChosenObjects
     }
@@ -24,19 +27,19 @@ const Moviecomponent = (props) => {
 
     return (  
 
-    <div>
+    <div className='theGreatMovieDiv'>
  
         <div className='theMovies'>
             {props.props.movies.map(m => 
-            <Link className='linkStyle' to={`/time`}>
-                <div className='movieCard' onClick={() => props.props.setChosenMovie(chosenObjects(m))}>
+           
+            <div className='movieCard'>
                     
-                    <img src={movieImg(m)} alt=""></img>
+                    <img src={movieImg(m)} alt="" onClick={() => props.props.setChosenMovie(chosenObjects(m))}></img>
                     <div className='movieLinks'>
                         <p>{m}</p>
                     </div>
-                </div>
-            </Link>)}
+            </div>
+            )}
         </div>
     </div>
     
