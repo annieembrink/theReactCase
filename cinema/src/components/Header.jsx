@@ -1,5 +1,17 @@
+import { useNavigate } from "react-router-dom";
 
-const Header = () => {
+const Header = (props) => {
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        props.setChosenMovie()
+       props.setChosenTime()
+       props.setChosenSeats()
+       props.setMarked([])
+        navigate('/')
+    }
+
     return ( 
         <div>
            
@@ -8,7 +20,7 @@ const Header = () => {
                 <div className="gradient"></div>
             </div>
 
-            <div className="welcome">
+            <div onClick={handleClick} className="welcome">
                 <h3>The Tiny Theatre</h3>
             </div> 
         </div>

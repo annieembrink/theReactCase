@@ -37,7 +37,12 @@ function App() {
   return (
     <div className="App">
     <Datecomponent/>
-    <Header/>
+    <Header 
+    setMarked={setMarked} 
+    setChosenSeats={setChosenSeats} 
+    setChosenMovie={setChosenMovie} 
+    setChosenTime={setChosenTime} 
+    />
       <Routes>
         <Route path ="/" element={ <Movies 
         objects={objects} 
