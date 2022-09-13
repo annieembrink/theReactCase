@@ -1,4 +1,3 @@
-// import Navbar from "./Navbar";
 import { useNavigate } from "react-router-dom";
 
 
@@ -26,11 +25,8 @@ const Confirmationcomponent = (props) => {
         <div className="theGreatConfirmationDiv" style={
             {backgroundImage: `url(${generateMovie()})`}
             }>
-            {/* <img src={generateMovie()} alt="" /> */}
             <div className="gradient"></div>
-            {/* <Navbar 
-            chosenMovie={props.props.chosenMovie} setChosenMovie={props.props.setChosenMovie}
-            /> */}
+           
             <div className="headingBookingButton">
             <h3 className="thankYou">Thanks for your booking!</h3>
             <div className="confirmedBooking">

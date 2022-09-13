@@ -14,40 +14,33 @@
   min-height: 100vh;
 }
 
-/* .todaysDate {
-  display: inline-block;
-  color: darkgray;
-  position: fixed;
-  right: 20px;
-  font-size: 0.8rem;
-  bottom: 10px;
-} */
+.todaysDate {
+  color: antiquewhite;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-/* HEADER */
-.headerImgDiv {
+/* MOVIE PAGE */
+
+.theGreatMovieDiv .backGroundDiv {
+  min-width: 100vw;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
-  width: 100vw;
 }
-
-.headerImg {
-  width: 100%;
-  height: 100%;
-  border-radius: 0px;
-  opacity: 70%;
-}
-
 .gradient {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 100%;
 
   background: rgb(2,0,36);
   background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(0,0,0,1) 72%);
 }
 
-/* MOVIE PAGE */
 .theMovies {
   width: 100vw;
   display: grid;
@@ -95,11 +88,6 @@ h1, h2, h3, h4 {
   color: antiquewhite;
 }
 
-.welcome .theScreen {
-  display: none;
-  margin: auto;
-}
-
 /* TIME PAGE */
 
 .theGreatTimeDiv {
@@ -115,15 +103,6 @@ h1, h2, h3, h4 {
   background-position: center;
 }
 
-/* .theGreatTimeDiv img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  object-position: center;
-  margin: auto;
-  position: absolute;
-  top: 0;
-} */
 
 .theGreatTimeDiv p {
   color: antiquewhite;
@@ -170,7 +149,6 @@ h1, h2, h3, h4 {
   max-width: 200px;
   margin: 25px;
   position: relative;
-  /* background-color:black; */
   z-index: -1;
 }
 
@@ -210,11 +188,7 @@ h1, h2, h3, h4 {
 
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: 100vh;
-
-  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; */
   
   display: flex;
   justify-content: center;
@@ -224,15 +198,6 @@ h1, h2, h3, h4 {
 .theGreatSeatDiv h2 {
   margin: auto;
 }
-
-/* .theGreatSeatDiv img, .theGreatConfirmationDiv img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  margin: auto;
-  position: absolute;
-  top: 0;
-} */
 
 .theGreatSeatDiv .gradient, .theGreatConfirmationDiv .gradient {
   height: 100%;
@@ -249,7 +214,6 @@ h1, h2, h3, h4 {
 .theSeats {
   width: 200px;
   margin: auto;
-  margin-top: 250px;
   z-index: 2;
 }
 
@@ -318,6 +282,11 @@ h1, h2, h3, h4 {
 .theGreatConfirmationDiv {
   width: 100vw;
   height: 100vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
   display: flex;
   justify-content: center;
 }
@@ -373,77 +342,27 @@ h1, h2, h3, h4 {
 @media (min-width: 500px) {
   .theMovies {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
-  }
-
-  .theGreatMovieDiv {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 100px;
-    left: auto;
-  }
-
-  .theGreatTimeDiv {
-    width: 100%;
-    /* height: 100%; */
-    position: absolute;
-    top: 100px;
-    left: auto;
-  }
-
-  .theGreatSeatDiv {
-    width: 100%;
-    /* height: 100%; */
-    position: absolute;
-    top: 100px;
-    left: auto;
   }
 }
 
 @media (min-width:801px) {
   .theMovies {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: auto;
     max-width: 70%;
-    gap: 20px;
-    top: 320px;
-  }
-
-  .movieLinks {
-    font-size: 0.6rem;
-  }
-
-  .timeContainer {
-    min-width: 200px;
-    max-width: 500px;
     margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
   }
 
-  .movieCard img {
-    width: 200px;
-    height: 280px;
-    object-fit: cover;
+  .theGreatTimeDiv, .theGreatSeatDiv, .theGreatMovieDiv {
+    background-position: top;
   }
-
-  .headerImg {
-    max-height: 300px;
-    object-fit: cover;
-    object-position: top;
-  }
-
 }
 
 @media (min-width: 1200px) {
-  .theMovies {
-    display: flex;
-    flex-direction: row;
-  }
-
+ 
 }

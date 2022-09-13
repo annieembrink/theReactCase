@@ -15,10 +15,10 @@ const Header = (props) => {
     return ( 
         <div>
            
-            <div className="headerImgDiv">
+            {/* <div className="headerImgDiv">
                 <img className='headerImg' src="https://payload.cargocollective.com/1/11/367710/13568488/MOVIECLASSICSerikweb_2500_800.jpg" alt="" />
                 <div className="gradient"></div>
-            </div>
+            </div> */}
 
             <div onClick={handleClick} className="welcome">
                 <h3>The Tiny Theatre</h3>

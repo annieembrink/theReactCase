@@ -47,7 +47,6 @@ return (
         {backgroundImage: `url(${generateMovie()})`}
         }>
         
-        {/* <img src={generateMovie()} alt="" /> */}
         <div className="gradient"></div>
 
         {props.props.chosenTime.map((theMovie) => (

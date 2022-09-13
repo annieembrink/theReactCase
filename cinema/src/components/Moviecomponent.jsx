@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import Datecomponent from './Datecomponent';
 
 const Moviecomponent = (props) => {
 
@@ -27,8 +27,15 @@ const Moviecomponent = (props) => {
 
     return (  
 
-    <div className='theGreatMovieDiv'>
-        {document.getElementsByClassName('headerImgDiv')[0].style.display = 'block'}
+    <div className='theGreatMovieDiv' >
+
+        <div className="backGroundDiv" style={{backgroundImage: `url(https://payload.cargocollective.com/1/11/367710/13568488/MOVIECLASSICSerikweb_2500_800.jpg)`}}>
+            <div className="gradient"></div>
+        </div>
+
+        <h1>Movies today!</h1>
+        <Datecomponent/>
+        
         <div className='theMovies'>
             {props.props.movies.map(m => 
            
