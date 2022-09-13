@@ -29,14 +29,9 @@ function App() {
     new Set(objects.map(item => item.movie))
   )
 
-  // console.log('chosenMovie', chosenMovie)
-  // console.log('chosenTime', chosenTime)
-  // console.log('chosenSeats', chosenSeats)
-  // console.log('marked', marked)
-
   return (
     <div className="App">
-    <Datecomponent/>
+    {/* <Datecomponent/> */}
     <Header 
     setMarked={setMarked} 
     setChosenSeats={setChosenSeats} 

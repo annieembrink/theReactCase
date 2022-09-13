@@ -16,7 +16,7 @@ const Timecomponent = (props) => {
     }
 
     function generateMovie() {
-        return props.props.chosenMovie[0].imageUrl
+        return props.props.chosenMovie[0].imageUrl2
     }
 
     const howManySeatsAvailable = (seats) => {
@@ -41,7 +41,7 @@ const Timecomponent = (props) => {
             <>
         <p className='timeLinks' onClick={() => props.props.setChosenTime(chosenTime(m.time))}>{m.time}:00 </p>
         
-        <p>{howManySeatsAvailable(m.seats)}</p>
+        <p>{howManySeatsAvailable(m.seats)}/10</p>
         </>
 
             )}

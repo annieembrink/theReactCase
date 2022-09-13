@@ -19,7 +19,7 @@ const Confirmationcomponent = (props) => {
     }
 
     function generateMovie() {
-        return props.props.chosenMovie[0].imageUrl
+        return props.props.chosenMovie[0].imageUrl2
     }
 
     return (  

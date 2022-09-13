@@ -12,7 +12,6 @@ const Seatcomponent = (props) => {
                 navigate('/confirmation')
             } else {
                 alert('You have to choose at least one seat')
-                console.log('choose seats')
             }
         }
 
@@ -23,7 +22,7 @@ const Seatcomponent = (props) => {
         }
 
         function generateMovie() {
-            return props.props.chosenMovie[0].imageUrl
+            return props.props.chosenMovie[0].imageUrl2
         }
 
         function handleClick(e, id) {
@@ -46,8 +45,6 @@ return (
     
     <div className='theGreatSeatDiv'>
         
-        
-
         <img src={generateMovie()} alt="" />
         <div className="gradient"></div>
 

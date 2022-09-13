@@ -3,6 +3,7 @@
         "movie": "Titanic",
         "time": "17",
         "imageUrl": "https://img.fruugo.com/product/0/15/14575150_max.jpg",
+        "imageUrl2": "https://cdn.artphotolimited.com/images/60913d60bd40b85323893a87/1000x1000/aufnahme-aus-dem-film-titanic.jpg",
         "seats": [  
             {"id": 0, "availability": false},
             {"id": 1, "availability": false},
@@ -71,6 +72,7 @@
         "movie": "A beautiful mind",
         "time": "17",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b8/A_Beautiful_Mind_Poster.jpg",
+        "imageUrl2": "http://3.bp.blogspot.com/-UXKcBBLGN4g/VVW842gXn_I/AAAAAAAAU_M/0CBTR-pGf44/s1600/A%2Bbeautiful%2Bmind%2B02.jpg", 
         "seats": [
             {"id": 0, "availability": true},
             {"id": 1, "availability": true},
@@ -139,6 +141,7 @@
         "movie": "Brokeback mountain",
         "time": "17",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a1/Brokeback_mountain.jpg", 
+        "imageUrl2": "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/03/brokeback-mountain.jpg?q=50&fit=crop&w=1400&dpr=1.5",
         "seats": [
             {"id": 0, "availability": true},
             {"id": 1, "availability": true},
@@ -207,6 +210,7 @@
         "movie": "Utvandrarna",
         "time": "17",
         "imageUrl": "https://d2iltjk184xms5.cloudfront.net/uploads/photo/file/424480/1a74529bc0c1e7063eddd5564cc5cf1b-artwork-utvandrarna_61c32064770c9.jpg", 
+        "imageUrl2": "https://i-viaplay-com.akamaized.net/viaplay-prod/919/844/1643726679-b14d05873fae67307fe1f956423bfc8f93b61f19.jpg?width=1600&height=900",
         "seats": [
             {"id": 0, "availability": false},
             {"id": 1, "availability": false},
@@ -275,6 +279,7 @@
         "movie": "Still Alice",
         "time": "17",
         "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjIzNzAxNjY1Nl5BMl5BanBnXkFtZTgwMDg4ODQxMzE@._V1_.jpg",
+        "imageUrl2": "https://assets.deutschlandfunk.de/FILE_1503999ed5e90e1c0c6d924056b316b1/1280x720.jpg?t=1597496075734",
         "seats": [
             {"id": 0, "availability": true},
             {"id": 1, "availability": true},
