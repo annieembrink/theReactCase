@@ -43,9 +43,11 @@ const Seatcomponent = (props) => {
 
 return (
     
-    <div className='theGreatSeatDiv'>
+    <div className='theGreatSeatDiv' style={
+        {backgroundImage: `url(${generateMovie()})`}
+        }>
         
-        <img src={generateMovie()} alt="" />
+        {/* <img src={generateMovie()} alt="" /> */}
         <div className="gradient"></div>
 
         {props.props.chosenTime.map((theMovie) => (

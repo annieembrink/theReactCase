@@ -23,8 +23,10 @@ const Confirmationcomponent = (props) => {
     }
 
     return (  
-        <div className="theGreatConfirmationDiv">
-            <img src={generateMovie()} alt="" />
+        <div className="theGreatConfirmationDiv" style={
+            {backgroundImage: `url(${generateMovie()})`}
+            }>
+            {/* <img src={generateMovie()} alt="" /> */}
             <div className="gradient"></div>
             {/* <Navbar 
             chosenMovie={props.props.chosenMovie} setChosenMovie={props.props.setChosenMovie}

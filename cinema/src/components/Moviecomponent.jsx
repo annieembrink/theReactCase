@@ -28,7 +28,7 @@ const Moviecomponent = (props) => {
     return (  
 
     <div className='theGreatMovieDiv'>
- 
+        {document.getElementsByClassName('headerImgDiv')[0].style.display = 'block'}
         <div className='theMovies'>
             {props.props.movies.map(m => 
            

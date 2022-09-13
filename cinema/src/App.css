@@ -103,12 +103,19 @@ h1, h2, h3, h4 {
 /* TIME PAGE */
 
 .theGreatTimeDiv {
+  width: 100vw;
+  height: 100vh;
+
   display: grid;
   justify-content: center;
   align-items: center;
+
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.theGreatTimeDiv img {
+/* .theGreatTimeDiv img {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
@@ -116,7 +123,7 @@ h1, h2, h3, h4 {
   margin: auto;
   position: absolute;
   top: 0;
-}
+} */
 
 .theGreatTimeDiv p {
   color: antiquewhite;
@@ -127,8 +134,8 @@ h1, h2, h3, h4 {
 
 .theGreatTimeDiv .gradient{
   height: 100%;
- left: 0;
- top: 0;
+  left: 0;
+  top: 0;
 }
 
 .headingTimeSeats {
@@ -198,25 +205,37 @@ h1, h2, h3, h4 {
 /* SEAT PAGE */
 
 .theGreatSeatDiv {
+  width: 100vw;
+  height: 100vh;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100vh;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+  
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .theGreatSeatDiv h2 {
   margin: auto;
 }
 
-.theGreatSeatDiv img, .theGreatConfirmationDiv img {
+/* .theGreatSeatDiv img, .theGreatConfirmationDiv img {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
   margin: auto;
   position: absolute;
   top: 0;
-}
+} */
 
 .theGreatSeatDiv .gradient, .theGreatConfirmationDiv .gradient {
-height: 100%;
+  height: 100%;
  left: 0;
  top: 0;
 }
@@ -230,7 +249,7 @@ height: 100%;
 .theSeats {
   width: 200px;
   margin: auto;
-  position: absolute;
+  margin-top: 250px;
   z-index: 2;
 }
 
@@ -240,7 +259,6 @@ height: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 20px;
   max-width: 200px;
- 
 }
 
 .oneSeat {
@@ -298,6 +316,8 @@ height: 100%;
 /* CONFIRMATION PAGE */
 
 .theGreatConfirmationDiv {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
 }

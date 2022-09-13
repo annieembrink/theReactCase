@@ -16,6 +16,7 @@ const Timecomponent = (props) => {
     }
 
     function generateMovie() {
+        document.getElementsByClassName("headerImgDiv")[0].style.display = 'none';
         return props.props.chosenMovie[0].imageUrl2
     }
 
@@ -29,9 +30,11 @@ const Timecomponent = (props) => {
         }
     }
     return (
-    <div className='theGreatTimeDiv'>
+    <div className='theGreatTimeDiv' style={
+        {backgroundImage: `url(${generateMovie()})`}
+        }>
 
-        <img src={generateMovie()} alt="" />
+        {/* <img src={generateMovie()} alt="" /> */}
         <div className="gradient"></div>
 
 <div className="headingTimeSeats">
@@ -54,3 +57,4 @@ const Timecomponent = (props) => {
 }
  
 export default Timecomponent;
+
